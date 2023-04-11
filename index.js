@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8000;
 app.use("/", userroute);
 app.use("/",BmiRoute);
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.send("backend api is running");
 });
 
